@@ -18,14 +18,14 @@ def test_timestamp():
     }
 
 
-def test_http_request():
-    """
-    Testing a view, using the test client.
-    """
-    client = TestClient()
-    response = client.get("/December 15, 2015")
-    assert response.status_code == 200
-    assert response.json() == {
-        "unix": 1450148400,
-        "natural": "December 15, 2015"
-    }
+# def test_http_request():
+#     """
+#     Testing a view, using the test client.
+#     """
+#     client = TestClient()
+#     response = client.get("/December 15, 2015")
+#     assert response.status_code == 200
+#     assert response.json() == {
+#         "unix": 1450148400,
+#         "natural": "December 15, 2015"
+#     }
