@@ -2,6 +2,6 @@ language: python
 python:
   - "3.6"
 # command to install dependencies
-install: "pip install -r requirements.txt"
+install: "pip install -r apistar/requirements.txt"
 # command to run tests
-script: apistar test
+script: cd apistar && apistar test
