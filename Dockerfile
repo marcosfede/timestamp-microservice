@@ -8,4 +8,4 @@ ADD requirements.txt /code
 RUN pip install -r requirements.txt
 ENV PYTHONUNBUFFERED 1
 ADD . /code/
-CMD gunicorn app:app.wsgi --workers=4 --bind=0.0.0.0:5000 --pid=pid --worker-class=meinheld.gmeinheld.MeinheldWorker
+CMD gunicorn app:app.wsgi --workers=4 --bind=0.0.0.0:8000 --pid=pid --worker-class=meinheld.gmeinheld.MeinheldWorker
