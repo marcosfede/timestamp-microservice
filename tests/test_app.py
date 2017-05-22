@@ -11,7 +11,7 @@ def test_timestamp():
         "unix": 1450148400,
         "natural": "December 15, 2015"
     }
-    unix = timestamp("1450148400")
+    unix = timestamp("1450137600")
     assert unix == {
         "unix": 1450148400,
         "natural": "December 15, 2015"
